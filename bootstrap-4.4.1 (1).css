@@ -367,7 +367,10 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 2rem;
+    font-size: 33.33px;
+    font-family: Verdana;
+    color: #038af9;
+    font-weight: 700;
 }
 
 h3, .h3 {
@@ -375,10 +378,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-    font-size: 19.44px;
-    font-family: Verdana;
-    color: #ffd400;
-    font-weight: 700;
+  font-size: 1.5rem;
 }
 
 h5, .h5 {
@@ -551,30 +551,6 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-.navbar.navbar-expand-lg.navbar-dark.bg-dark .container .navbar-brand {
-}
-.navbar {
-    background-image: url(../images/noodle-logo.jpg);
-	position:fixed;
-	z-index: 10;
-	width:100
-}
-.card .card-body .card-text {
-    color: #e2e2e2;
-    font-family: Arial;
-    font-size: 16.67px;
-    font-weight: 400;
-}
-.carou {
-}
-.carousel {
-    margin-top: 68px;
-}
-
-
-
-
-
 
 @media (min-width: 576px) {
   .container {
@@ -4347,18 +4323,19 @@ input[type="button"].btn-block {
 }
 
 .navbar {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-	position: fixed;
-	width:100%;
+    position: fixed;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-image: url(noodle-logo.jpg);
+    z-index: 10;
+    width: 100%;
 }
 
 .navbar .container,
@@ -4729,7 +4706,8 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+    color: #fff;
+    z-index: 0;
 }
 
 .navbar-dark .navbar-toggler {
@@ -9972,11 +9950,7 @@ button.bg-dark:focus {
 }
 
 .text-center {
-    text-align: center !important;
-    font-family: Verdana;
-    color: #038af9;
-    font-size: 33.33px;
-    font-weight: 700;
+  text-align: center !important;
 }
 
 @media (min-width: 576px) {
@@ -10225,8 +10199,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .navbar {
     display: none;
-    position: fixed;
-    z-index: 10;
+    background-image: url(noodle-logo.jpg);
   }
   .badge {
     border: 1px solid #000;
